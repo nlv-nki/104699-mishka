@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Николаев](https://up.htmlacademy.ru/adaptive/14/user/104699).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Зубов`.
 
 ---
 
