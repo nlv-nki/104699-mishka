@@ -1,5 +1,5 @@
 .about {
-  padding: 0 30px;
+  //padding: 0 30px;
 }
 
 .about__item {
@@ -21,14 +21,24 @@
 }
 
 @media (min-width: 768px){
-  .about {
-    padding: 0;
+  .about__wrap {
+    padding: 0 50px;
   }
+
   .about__list {
     display: flex;
     flex-wrap: wrap;
   }
   .about__list li {
     width:334px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__wrap {
+    padding:0 245px;
+  }
+  .about__list {
+    width:700px;
   }
 }
