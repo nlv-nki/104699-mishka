@@ -9,31 +9,85 @@
   <body>
     <header class="page-header">
 <!-- header -->
-  <a class="page-header__logo">
-    <img src="img/logo-mobile.svg"  alt="Мишка">
+ <a class="page-header__logo">
+
       </a>
-    <button type="button" class="page-header__toggle page-header__toggle--open">Меню</button>
-      <!--
-  <nav class="top-menu-nav">
-        <button class="top-menu-nav__toggle" type="button">Открыть меню</button>
-        <div class="top-menu-nav__wrapper">
-          <ul class="top-menu-nav__list">
-            <li class="top-menu-nav__item--active"><a>Главная</a></li>
-            <li class="top-menu-nav__item"><a>Каталог</a></li>
-            <li class="top-menu-nav__item"><a>Заказать</a></li>
-          </ul>
-        </div>
-  </nav>
--->
+
+    <button type="button" class="page-header__toggle page-header__toggle--open page-header__toggle--no-js">Меню</button>
+
+
+
+
+    <div class="page-header__logo">
+        <a class="page-header__link page-header__link--current">
+         <img src="img/logo-mobile.svg"  alt="Мишка">
+
+        </a>
+        <button type="button" class="page-header__toggle page-header__toggle--open">Меню</button>
+      </div>
+
+
+
+
+
+
+
+      <ul class="main-nav main-nav--closed main-nav--no-js">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+
+
+            <ul class="user-nav user-nav--closed user-nav--no-js">
+        <li class="user-nav__item">
+          <a class="user-nav__link user-nav__link--search" href="#">Поиск по сайту
+            <svg class="user-nav__link-svg" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link user-nav__link--cart" href="#">Корзина: пока пуста
+            <svg class="user-nav__link-svg" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+
+
+
       <!-- header -->
 </header>
+
+
+
+
+
+
     <div class="page-content page-catalog">
 <!-- page content -->
+
+
+
+
+
 <section class="catalog-promo">
         <div class="catalog-promo__wrap">
           <h1 class="catalog-promo__text">Каталог товаров</h1>
         </div>
 </section>
+
+
+
+
+
+
 <section class="product">
   <div class="product__wrap">
     <div class="product__list">

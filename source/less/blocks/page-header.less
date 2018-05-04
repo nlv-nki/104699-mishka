@@ -5,11 +5,6 @@
 }
 
 
-.page-header__logo {
-
-}
-
-
 .page-header__toggle {
     position: absolute;
     top: 0px;
@@ -41,15 +36,23 @@
 @media (min-width: 768px) {
 
   .page-header {
-
     width:768px;
     height:90px;
+    display:flex;
+  }
 
-  }
+
   .page-header__logo {
-    height:54px;
-    margin:20px 200px 0px 50px;
+    order: -2;
+    padding-left: 48px;
+    width: 370px;
+    height: 88px;
   }
+
+  .page-header__toggle {
+    display:none;
+  }
+
 
 
 }
@@ -62,3 +65,6 @@
   }
 
 }
+
+
+

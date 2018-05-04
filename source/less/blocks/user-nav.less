@@ -5,6 +5,10 @@
     background: #fff;
 }
 
+.user-nav, .user-nav--closed {
+    display: none;
+}
+
 .user-nav__item {
     display: block;
     min-height: 80px;
@@ -13,11 +17,14 @@
 }
 
 @media (min-width: 768px) {
-
   .user-nav {
     order: -1;
     flex-grow: 1;
     display: flex;
+  }
+
+.user-nav__link--cart {
+    padding-left: 83px;
   }
 
   .user-nav__item {
@@ -26,10 +33,12 @@
     border-top: 1px solid #ececec;
     border-left: 1px solid #ececec;
   }
+
   .user-nav__link--search {
     width: 82px;
     font-size: 0;
   }
+
   .user-nav__link {
     padding-left: 32px;
     box-sizing: border-box;
