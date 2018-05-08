@@ -1,69 +1,81 @@
 .page-header {
-    background-color: #fff;
+  background-color: #ffffff;
 }
+
 .page-header__wrapper {
-    width: 320px;
-    margin: 0 auto;
+  width: 320px;
+  margin: 0 auto;
 }
+
 .page-header__logo {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
+
 .page-header__toggle {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
+
 .page-header__link {
+  display: block;
+  padding: 22px 0;
+
+  img {
     display: block;
-    padding: 22px 0;
-    img {
-        display: block;
-        margin:  0 auto;
-    }
+    margin: 0 auto;
+  }
 }
+
 .page-header__delivery {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -85px;
+  }
+
+  .page-header__toggle {
     display: none;
+  }
+
+  .page-header__logo {
+    order: -2;
+    flex-grow: 1;
+    max-width: 370px;
+  }
+
+  .page-header__link {
+    display: inline-block;
+    margin-left: 47px;
+
+    img {
+      margin-right: auto;
+    }
+  }
+
+  .page-header__delivery {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    margin-left: auto;
+  }
 }
 
-@media (min-width: 768px){
-    .page-header__wrapper {
-        width: 768px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: -85px;
-    }
-    .page-header__toggle {
-        display: none;
-    }
-    .page-header__logo {
-        order: -2;
-        flex-grow: 1;
-        max-width: 370px;
-    }
-    .page-header__link {
-        display: inline-block;
-        margin-left: 47px;
-        img {
-            margin-right: auto;
-        }
-    }
-    .page-header__delivery {
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 50px;
-        margin-left: auto;
-    }
-}
+@media (min-width: 1150px) {
+  .page-header__wrapper {
+    width: 1150px;
+  }
 
-@media (min-width: 1150px){
-    .page-header__wrapper {
-        width: 1150px;
-    }
-    .page-header__logo {
-        max-width: 150px;
-        margin-right: auto;
-        margin-left: 50px;
-    }
+  .page-header__logo {
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: 50px;
+  }
 }

@@ -2,61 +2,75 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
   &--desc {
     display: none;
   }
 }
+
 .main-nav__item {
   border-top: 1px solid #ececec;
 }
+
 .main-nav__link {
   padding: 27px 0;
   padding-left: 75px;
   display: block;
   font-size: 17px;
-  color: #000;
+  color: #000000;
   font-weight: 700;
   text-decoration: none;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .main-nav {
     display: flex;
+
     &--desc {
       display: none;
     }
   }
+
   .main-nav__link {
     padding-left: 0;
   }
+
   .main-nav__item {
     border-top: 0;
     margin-left: 37px;
+
     &:first-child {
       margin-left: 50px;
     }
   }
 }
-@media (min-width: 1150px){
+
+@media (min-width: 1150px) {
   .main-nav {
     order: -3;
+
     &--desc {
       display: flex;
       order: 0;
+
       .main-nav__item:first-child {
         border: none;
       }
     }
   }
+
   .main-nav__item {
     margin: 0;
+
     &:first-child {
       margin: 0;
+
       .main-nav__link {
         border-right: 1px solid #ececec;
       }
     }
   }
+
   .main-nav__link {
     padding-left: 30px;
     padding-right: 30px;
