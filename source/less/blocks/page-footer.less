@@ -1,9 +1,11 @@
 .page-footer {
   background-color: #f1f1f1;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-footer__wrap {
-  padding: 10px 30px;
+  padding-top: 10px;
 }
 
 .page-footer__social-list ul {
@@ -23,11 +25,23 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  width: 350px;
   padding: 70px;
 }
 
 
 .page-footer__copyright svg {
   margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .page-footer {
+    width: 1150px;
+  }
 }
